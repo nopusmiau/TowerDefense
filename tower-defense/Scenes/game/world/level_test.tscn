@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://wovo0vqd5eu4"]
+
+[ext_resource type="PackedScene" uid="uid://3prx8xrwyjv8" path="res://Scenes/game/game_manager.tscn" id="1_kof55"]
+[ext_resource type="PackedScene" uid="uid://beqxdgslclojq" path="res://Scenes/game/enemies/test_enemy.tscn" id="2_pugrh"]
+[ext_resource type="PackedScene" uid="uid://dnuuk2kwykdy3" path="res://Scenes/ui/HUD.tscn" id="3_8x15g"]
+
+[node name="LevelTest" type="Node2D"]
+
+[node name="GameManager" parent="." instance=ExtResource("1_kof55")]
+position = Vector2(932, 464)
+
+[node name="TestEnemy" parent="." instance=ExtResource("2_pugrh")]
+position = Vector2(646, 427)
+
+[node name="Hud" parent="." instance=ExtResource("3_8x15g")]

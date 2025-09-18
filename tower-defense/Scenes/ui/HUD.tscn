@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnuuk2kwykdy3"]
+
+[ext_resource type="Script" uid="uid://bb45cma80guhr" path="res://Scripts/ui/hud.gd" id="1_1gbqs"]
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_1gbqs")
+
+[node name="GoldLabel" type="Label" parent="."]
+offset_left = 1760.0
+offset_top = 10.0
+offset_right = 1830.0
+offset_bottom = 43.0
+scale = Vector2(2, 2)
+text = "Oro: 100"
+horizontal_alignment = 1
