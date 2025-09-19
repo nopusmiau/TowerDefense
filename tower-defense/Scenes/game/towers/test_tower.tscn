@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlno82ognl8ip"]
+
+[ext_resource type="Script" uid="uid://ico7idr3e8jq" path="res://Scripts/game/towers/test_tower.gd" id="1_k0kdd"]
+[ext_resource type="Texture2D" uid="uid://ci4w7amno3ssq" path="res://Assets/art/towers/Test_Tower.png" id="2_46pqu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6yylf"]
+radius = 202.0396
+
+[node name="TestTower" type="Area2D"]
+script = ExtResource("1_k0kdd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6yylf")
+
+[node name="TowerPivot" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="TowerPivot"]
+position = Vector2(1.0000305, 1.999939)
+scale = Vector2(2.3281262, 2.3744571)
+texture = ExtResource("2_46pqu")
+
+[node name="Marker2D" type="Marker2D" parent="TowerPivot"]
+
+[node name="AttackTimer" type="Timer" parent="."]

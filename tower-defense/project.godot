@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="TowerDefense"
-run/main_scene="uid://wovo0vqd5eu4"
+run/main_scene="uid://p82dgkn4xdh0"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
@@ -22,6 +22,15 @@ GameEvents="*res://Scenes/system/autoloads/game_events.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+
+[layer_names]
+
+2d_render/layer_1="obstacles"
+2d_render/layer_2="placement"
+2d_physics/layer_1="obstacles"
+2d_navigation/layer_1="obstacles"
+2d_physics/layer_2="placement"
+2d_navigation/layer_2="placement"
 
 [rendering]
 

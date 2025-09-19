@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://b43xjux5qeji2"]
+
+[ext_resource type="Script" uid="uid://bn4g7unm4j8r2" path="res://Scripts/ui/end_screen.gd" id="1_lh8v6"]
+
+[node name="GameOverAndVictoryScreen" type="CanvasLayer"]
+script = ExtResource("1_lh8v6")
+
+[node name="CenterContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 192.0
+offset_right = 1726.0
+offset_bottom = 954.0
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 291.0
+offset_right = 857.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 50
+text = "Text"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/Panel"]
+layout_mode = 0
+offset_left = 642.0
+offset_top = 429.0
+offset_right = 760.5085
+offset_bottom = 505.0
+
+[node name="RetryButton" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
+layout_mode = 2
+text = "TEXT"
+
+[node name="ExitToMenuButton" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
+layout_mode = 2
+text = "TEXT"

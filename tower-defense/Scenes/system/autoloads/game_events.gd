@@ -2,6 +2,7 @@ extends Node
 # Señales del Core Gameplay
 signal game_started()
 signal game_over(victory: bool)
+signal victory()
 signal wave_started(wave_number: int)
 signal wave_cleared(wave_number: int)
 
@@ -21,6 +22,10 @@ signal tower_deselected()
 # Señales de UI
 signal request_build_ui(tower_data) # El GameManager pide a la UI que muestre el menú de construcción
 signal request_wave_start() # El botón de la UI pide iniciar una oleada
+signal enemy_reached_end()
+signal request_build_mode(tower_type: String, tower_cost: int)
+signal request_restart()
+signal request_next_level()
 
 # Función de debug opcional, pero muy útil
 func emit_debug_signal(signal_name: String, value):
