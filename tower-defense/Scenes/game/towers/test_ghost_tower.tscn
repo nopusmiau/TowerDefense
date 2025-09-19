@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://denb6qs8jvu8h"]
+
+[ext_resource type="Script" uid="uid://dy85cecukiudg" path="res://Scripts/game/towers/test_ghost_tower.gd" id="1_13b10"]
+[ext_resource type="Texture2D" uid="uid://ci4w7amno3ssq" path="res://Assets/art/towers/Test_Tower.png" id="2_ru0a5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13b10"]
+size = Vector2(149, 159)
+
+[node name="TestGhostTower" type="Node2D"]
+script = ExtResource("1_13b10")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.5019608)
+position = Vector2(4.478193, 7.9983344)
+scale = Vector2(-2.0103953, 2.2012687)
+texture = ExtResource("2_ru0a5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visibility_layer = 3
+position = Vector2(4.5, 8.5)
+shape = SubResource("RectangleShape2D_13b10")

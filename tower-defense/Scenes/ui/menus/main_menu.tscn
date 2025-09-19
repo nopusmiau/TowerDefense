@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://p82dgkn4xdh0"]
+
+[ext_resource type="Texture2D" uid="uid://crr0148oxa10g" path="res://Assets/art/ui/MainMenu.png" id="1_2ltg1"]
+[ext_resource type="Script" uid="uid://dn4ypdwi06esm" path="res://Scripts/ui/main_menu.gd" id="1_tmkf4"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tmkf4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 1919.0
+offset_bottom = 1074.0
+texture = ExtResource("1_2ltg1")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 787.0
+offset_top = 373.0
+offset_right = 855.90125
+offset_bottom = 464.39816
+scale = Vector2(4.847519, 3.9169278)
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Play"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Exit"
+
+[node name="GameTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_right = 1674.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 120
+text = "Tower Defense Adventure"
+horizontal_alignment = 1
+vertical_alignment = 1
